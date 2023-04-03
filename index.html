@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>shoe website</title>
+    <link rel="stylesheet" href="/css/main.css" />
+  </head>
+  <body>
+    <div class="hero-img"></div>
+    <div class="wrrapper" id="">
+      <header>
+        <a href="#" class="logo"> Shoe<span>Brand</span> </a>
+
+        <nav>
+          <img  class="close-menu"src="/image/close-bold.svg"  alt="">
+          <ul>
+            <li><a href="#">Home</li></a>
+            <li><a href="#">Sneakers</li></a>
+            <li><a href="#">Players</li></a>
+        </ul>
+        
+      
+        </nav>
+    <img src="/image/icons8-menu-120.png" class="menu" alt="menu-icon" />
+      </header>
+      <section class="hero">
+        <h1>Regain your confidence on the court.</h1>
+        <p class="subhead">
+          A shoe built with purpose and to take your game to the next level
+        </p>
+      
+        <img
+          src="/image/down-arrow-svgrepo-com.png"
+          alt="arrow-icon"
+          class="down-arrow" /> 
+      </section>
+      <section class="more-info">
+        <div class="feature">
+          <div class="content">
+            <p class="title">Lightweight</p>
+            <p class="description">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque
+              natus voluptas maxime officiis repellendus dolores animi.
+            </p>
+            <img src="/image/photo-1.jpeg" alt="" />
+          </div>
+        </div>
+        <div class="feature-left">
+          <div class="content">
+            <p class="title">Lightweight</p>
+            <p class="description">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque
+              natus voluptas maxime officiis repellendus dolores animi.
+            </p>
+            <img src="/image/photo-2.jpeg" alt="" />
+          </div>
+        </div>
+        <div class="feature">
+          <div class="content">
+            <p class="title">Lightweight</p>
+            <p class="description">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque
+              natus voluptas maxime officiis repellendus dolores animi.
+            </p>
+            <img src="/image/photo-3.jpeg" alt="" />
+          </div>
+        </div>
+      </section>
+
+
+      <script> 
+       const menu = document.querySelector('.menu')
+       const close = document.querySelector('.close-menu')
+       const nav = document.querySelector('nav')
+
+       menu.addEventListener('click', () => {
+         nav.classList.add('open-nav')
+       })
+      close.addEventListener('click', () => {
+         nav.classList.remove('open-nav')
+       })
+      
+      </script>
+    </div>
+  </body>
+</html>
